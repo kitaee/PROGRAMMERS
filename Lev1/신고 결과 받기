@@ -1,0 +1,19 @@
+def solution(id_list, report, k):
+    answer = [0] * len(id_list)
+    reportDict={}
+    report = list(set(report))
+    for reportList in report:
+        reportingId = reportList.split()[0]
+        reportedId = reportList.split()[1]
+        if reportedId in reportDict:
+            reportDict[reportedId]+=1
+        else:
+            reportDict[reportedId] = 1
+    
+    for reportList in report:
+        reportingId = reportList.split()[0]
+        reportedId = reportList.split()[1]
+        if reportedId in reportDict:
+            if reportDict[reportedId] >=k:
+                answer[id_list.index(reportingId)]+=1
+    return answer
