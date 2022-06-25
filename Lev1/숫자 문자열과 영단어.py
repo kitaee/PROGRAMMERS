@@ -9,31 +9,31 @@ def solution(s):
         if ''.join(stringBucket) == 'zero':
             answerString += '0'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'one':
+        if ''.join(stringBucket) == 'one':
             answerString += '1'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'two':
+        if ''.join(stringBucket) == 'two':
             answerString += '2'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'three':
+        if ''.join(stringBucket) == 'three':
             answerString += '3'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'four':
+        if ''.join(stringBucket) == 'four':
             answerString += '4'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'five':
+        if ''.join(stringBucket) == 'five':
             answerString += '5'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'six':
+        if ''.join(stringBucket) == 'six':
             answerString += '6'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'seven':
+        if ''.join(stringBucket) == 'seven':
             answerString += '7'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'eight':
+        if ''.join(stringBucket) == 'eight':
             answerString += '8'
             stringBucket.clear()
-        elif ''.join(stringBucket) == 'nine':
+        if ''.join(stringBucket) == 'nine':
             answerString += '9'
             stringBucket.clear()
     return int(answerString)
