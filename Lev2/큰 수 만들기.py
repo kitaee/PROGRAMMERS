@@ -7,5 +7,6 @@ def solution(number, k):
             k-=1
             if len(stack)==0:
                 break
-        stack.append(number[i])
+        if len(stack)<answerLen:
+            stack.append(number[i])
     return ''.join(stack)
